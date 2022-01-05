@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "ex": "https://example.org/examples#",
+    "schema": "http://schema.org/",
+    "VaccinationAuthorization": {
+      "@id": "ex:VaccinationAuthorization",
+      "@context": {
+        "@version": 1.1,
+        "id": "@id",
+        "type": "@type",
+        "proxiedPermissions": {
+          "@id": "ex:ProxiedPermissions",
+          "@type": "@id",
+          "@context": {
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "grant": "ex:grant",
+            "when": {
+              "@id": "ex:When",
+              "@type": "@id",
+              "@context": {
+                "@version": 1.1,
+                "id": "@id",
+                "type": "@type",
+                "role": "ex:role"
+              }
+            }
+          }
+        },
+        "givenName": "schema:givenName",
+        "familyName": "schema:familyName",
+        "registrationId": "ex:registrationId"
+      }
+    }
+  }
+}

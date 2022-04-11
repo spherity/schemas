@@ -12,4 +12,4 @@
 [vaccination-authorization.jsonld](https://spherity.github.io/schemas/testing/ap13/vaccination-authorization.jsonld)
 
 ## ID Card
-[vaccination-authorization.jsonld](https://spherity.github.io/schemas/testing/ap13/PersonalID.jsonld)
+[IDCard.jsonld](https://spherity.github.io/schemas/testing/ap13/PersonalID.jsonld)

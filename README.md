@@ -6,7 +6,7 @@
 [vaccination-v1.jsonld](https://spherity.github.io/schemas/testing/ap13/vaccination-v1.jsonld)
 
 ## chained-credential
-[vaccination-v1.jsonld](https://spherity.github.io/schemas/testing/ap13/chained-credential.jsonld)
+[chained-credential.jsonld](https://spherity.github.io/schemas/testing/ap13/chained-credential.jsonld)
 
 ## vaccination-authorization
-[vaccination-v1.jsonld](https://spherity.github.io/schemas/testing/ap13/vaccination-authorization.jsonld)
+[vaccination-authorization.jsonld](https://spherity.github.io/schemas/testing/ap13/vaccination-authorization.jsonld)

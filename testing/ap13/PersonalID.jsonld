@@ -1,6 +1,6 @@
 {
     "@context": {
-      "@version": 1.0,
+      "@version": 1.1,
       "@protected": true,
   
       "name": "http://schema.org/name",
@@ -11,7 +11,7 @@
       "IDCard": {
         "@id": "ex:IDCard",
         "@context": {
-          "@version": 1.0,
+          "@version": 1.1,
           "@protected": true,
   
           "id": "@id",
@@ -27,7 +27,7 @@
       "ID": {
         "@id": "ex:ID",
         "@context": {
-          "@version": 1.0,
+          "@version": 1.1,
           "@protected": true,
   
           "id": "@id",

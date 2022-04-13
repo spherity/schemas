@@ -46,7 +46,8 @@
           "addresszipCode": "schema:addresszipCode",
           "placeofBirth": "schema:placeofBirth",
           "academicTitle": "schema:academicTitle",
-          "addressCcity": "schema:addressCcity"
+          "addressStreet": "schema:addressStreet"
+
         }
       },
   

@@ -13,3 +13,7 @@
 
 ## ID Card
 [IDCard.jsonld](https://spherity.github.io/schemas/testing/ap13/PersonalID.jsonld)
+
+
+## Insurance Card
+[InsuranceID.jsonld](https://spherity.github.io/schemas/testing/ap13/InsuranceID.jsonld)

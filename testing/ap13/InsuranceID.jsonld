@@ -1,97 +1,106 @@
 {
   "@context": {
-    "@version": 1.1,
-    "@protected": true,
-    "id": "@id",
-    "type": "@type",
-    "description": "http://schema.org/description",
-    "identifier": "http://schema.org/identifier",
-    "name": "http://schema.org/name",
-    "image": "http://schema.org/image",
-    "ex": "https://example.org/examples#",
-
-    "InsuranceID": {
-        "@id": "ex:InsuranceID",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true,
-        "id": "@id",
-        "type": "@type",
-        "description": "http://schema.org/description",
-        "identifier": "http://schema.org/identifier",
-        "name": "http://schema.org/name",
-        "image": "http://schema.org/image"
-      }
+    "w3ccred": "https://www.w3.org/2018/credentials#",
+    "schema-id": "123",
+    "InsuranceId": {
+      "@id": "schema-id"
     },
-    "AllgemeineVersicherungsdaten":{
-      "@id":"https://w3id.org/vaccination#VaccinationEvent",
-      "@context":{
-         "@version":1.1,
-         "@protected":true,
-         "id":"@id",
-         "type":"@type",
-         "schema":"http://schema.org/",
-         "name":"schema:name",
-         "card_type":"schema:card_type",
-         "use":"schema:use",
-         "Versicherter":{
-            "id":"@id",
-            "type":"@type",
-            "schema":"http://schema.org/",
-            "Versicherungsschutz":{
-               "id":"@id",
-               "type":"@type",
-               "schema":"http://schema.org/",
-               "Beginn":"http://www.w3.org/2001/XMLSchema#dateTime",
-               "Ende":"http://www.w3.org/2001/XMLSchema#dateTime",
-               "Kostentraeger":{
-                  "id":"@id",
-                  "type":"@type",
-                  "schema":"http://schema.org/",
-                  "base":{
-                     "id":"@id",
-                     "type":"@type",
-                     "schema":"http://schema.org/",
-                     "name":"schema:AbrechnenderKostentraeger",
-                     "type_vsd":"Kostentraeger"
-                  }
-               }
-            }
-         }
-      }
-   },
-    "PersoenlicheVersichertendaten": {
-      "@id": "https://w3id.org/vaccination#VaccineRecipient",
+    "credentialSubject": {
+      "@id": "w3ccred:credentialSubject",
       "@context": {
-        "@version": 1.1,
-        "@protected": true,
-        "id": "@id",
-        "type": "@type",
-        "schema":"http://schema.org/",
-        "name":"schema:name",
-        "card_type":"schema:card_type",
-        "use":"schema:use",
-        "Versicherter": {
-          "id": "@id",
-          "type": "@type",
-          "schema":"http://schema.org/",
-          "Versicherten_ID":"schema:ID",
-          "Person":{
-            "id": "@id",
-            "type": "@type",
-            "schema":"http://schema.org/",
-            "Geburtsdatum":"http://www.w3.org/2001/XMLSchema#dateTime",
-            "familyName": "http://schema.org/familyName",
-            "gender": "http://schema.org/gender",
-            "givenName": "http://schema.org/givenName",
-            "Vorsatzwort":"schema:Vorsatzwort",
-            "Namenszusatz":"schema:Namenszusatz",
-            "Titel":"schema:Titel",
-            "addressStreet": "schema:addressStreet",
-            "PostfachAdresse":"schema:PostfachAdresse"
+        "id": {
+          "@id": "schema-id:id",
+          "@type": "@id"
+        },
+        "allgemeineVersicherungsdaten": {
+          "@id": "schema-id:allgemeineVersicherungsdaten",
+          "@context": {
+            "versicherter": {
+              "@id": "schema-id:versicherter",
+              "@context": {
+                "versicherungsschutz": {
+                  "@id": "schema-id:versicherungsschutz",
+                  "@type": "http://schema.org/Text"
+                },
+                "beginn": {
+                  "@id": "schema-id:beginn",
+                  "@type": "http://schema.org/DateTime"
+                },
+                "ende": {
+                  "@id": "schema-id:ende",
+                  "@type": "http://schema.org/DateTime"
+                },
+                "kostentraeger": {
+                  "@id": "schema-id:kostentraeger",
+                  "@context": {
+                    "base": {
+                      "@id": "schema-id:base",
+                      "@context": {
+                        "name": {
+                          "@id": "schema-id:name",
+                          "@type": "http://schema.org/Text"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "persoenlicheVersichertendaten": {
+          "@id": "schema-id:persoenlicheVersichertendaten",
+          "@context": {
+            "versicherter": {
+              "@id": "schema-id:versicherter",
+              "@context": {
+                "person": {
+                  "@id": "schema-id:person",
+                  "@context": {
+                    "geburtsdatum": {
+                      "@id": "schema-id:geburtsdatum",
+                      "@type": "http://schema.org/DateTime"
+                    },
+                    "familyName": {
+                      "@id": "schema-id:familyName",
+                      "@type": "http://schema.org/Text"
+                    },
+                    "gender": {
+                      "@id": "schema-id:gender",
+                      "@type": "http://schema.org/Text"
+                    },
+                    "givenName": {
+                      "@id": "schema-id:givenName",
+                      "@type": "http://schema.org/Text"
+                    },
+                    "vorsatzwort": {
+                      "@id": "schema-id:vorsatzwort",
+                      "@type": "http://schema.org/Text"
+                    },
+                    "namenszusatz": {
+                      "@id": "schema-id:namenszusatz",
+                      "@type": "http://schema.org/Text"
+                    },
+                    "titel": {
+                      "@id": "schema-id:titel",
+                      "@type": "http://schema.org/Text"
+                    },
+                    "addressStreet": {
+                      "@id": "schema-id:addressStreet",
+                      "@type": "http://schema.org/Text"
+                    },
+                    "postfachAdresse": {
+                      "@id": "schema-id:postfachAdresse",
+                      "@type": "http://schema.org/Text"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
-    }
+    },
+    "@version": 1.1
   }
 }

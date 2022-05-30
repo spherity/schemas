@@ -14,7 +14,7 @@
         "@version": 1.1,
         "@protected": true,
         "id": "@id",
-        "type": "@type",
+        
         "description": "http://schema.org/description",
         "identifier": "http://schema.org/identifier",
         "name": "http://schema.org/name",
@@ -26,24 +26,24 @@
       "@context":{
          "@version":1.1,
          "@protected":true,
-         "id":"@id",
+         "id":"https://w3id.org/vaccination#VaccinationEvent",
          "type":"@type",
          "schema":"http://schema.org/",
          "name":"schema:name",
          "card_type":"schema:card_type",
          "use":"schema:use",
          "Versicherter":{
-            "id":"@id",
+            "id":"https://w3id.org/vaccination#VaccinationEvent",
             "type":"@type",
             "schema":"http://schema.org/",
             "Versicherungsschutz":{
-               "id":"@id",
+               "id":"https://w3id.org/vaccination#VaccinationEvent",
                "type":"@type",
                "schema":"http://schema.org/",
                "Beginn":"http://www.w3.org/2001/XMLSchema#dateTime",
                "Ende":"http://www.w3.org/2001/XMLSchema#dateTime",
                "Kostentraeger":{
-                  "id":"@id",
+                  "id":"https://w3id.org/vaccination#VaccinationEvent",
                   "type":"@type",
                   "schema":"http://schema.org/",
                   "base":{
@@ -63,20 +63,20 @@
       "@context": {
         "@version": 1.1,
         "@protected": true,
-        "id": "@id",
-        "type": "@type",
+        "id": "https://w3id.org/vaccination#VaccinationEvent",
+        
         "schema":"http://schema.org/",
         "name":"schema:name",
         "card_type":"schema:card_type",
         "use":"schema:use",
         "Versicherter": {
-          "id": "@id",
-          "type": "@type",
+          "id": "https://w3id.org/vaccination#VaccinationEvent",
+          
           "schema":"http://schema.org/",
           "Versicherten_ID":"schema:ID",
           "Person":{
             "id": "@id",
-            "type": "@type",
+            
             "schema":"http://schema.org/",
             "Geburtsdatum":"http://www.w3.org/2001/XMLSchema#dateTime",
             "familyName": "http://schema.org/familyName",
@@ -95,8 +95,8 @@
       "@context": {
         "@version": 1.1,
         "@protected": true,
-        "id": "@id",
-        "type": "@type",
+        "id": "https://w3id.org/vaccination#VaccinationEvent",
+       
         "schema":"http://schema.org/",
         "name":"schema:name",
         "card_type":"schema:card_type",
@@ -104,7 +104,7 @@
        
         "Zuzahlungsstatus": {
           "id": "@id",
-        "type": "@type",
+        
         "schema":"http://schema.org/",
         "Status":"schema:Status",
         "Gueltig_bis":"http://www.w3.org/2001/XMLSchema#dateTime"
@@ -116,7 +116,7 @@
        "DMP_Kennzeichnung":"schema:DMP_Kennzeichnung",
        "Selektivvertraege":{
         "id": "@id",
-        "type": "@type",
+       
         "schema":"http://schema.org/",
         "Aerztlich":"schema:Aerztlich",
         "Zahnaerztlich":"schema:Zahnaerztlich",
@@ -125,7 +125,7 @@
        },
        "RuhenderLeistungsanspruch":{
         "id": "@id",
-        "type": "@type",
+       
         "schema":"http://schema.org/",
         "Beginn":"http://www.w3.org/2001/XMLSchema#dateTime",
         "Ende":"http://www.w3.org/2001/XMLSchema#dateTime",

@@ -92,49 +92,6 @@
           }
         }
       }
-    },
-    "GeschuetzteVersichertendaten": {
-      "@context": {
-        "@version": 1.1,
-        "@protected": true,
-        "id": "@id",
-        "type": "@type",
-        "schema":"http://schema.org/",
-        "name":"schema:name",
-        "card_type":"schema:card_type",
-        "use":"schema:use",
-       
-        "Zuzahlungsstatus": {
-          "id": "@id",
-        "type": "@type",
-        "schema":"http://schema.org/",
-        "Status":"schema:Status",
-        "Gueltig_bis":"http://www.w3.org/2001/XMLSchema#dateTime"
-
-
-
-        },
-       "BesonderePersonengruppe":"schema:BesonderePersonengruppe",
-       "DMP_Kennzeichnung":"schema:DMP_Kennzeichnung",
-       "Selektivvertraege":{
-        "id": "@id",
-        "type": "@type",
-        "schema":"http://schema.org/",
-        "Aerztlich":"schema:Aerztlich",
-        "Zahnaerztlich":"schema:Zahnaerztlich",
-        "Art":"schema:Art"
-
-       },
-       "RuhenderLeistungsanspruch":{
-        "id": "@id",
-        "type": "@type",
-        "schema":"http://schema.org/",
-        "Beginn":"http://www.w3.org/2001/XMLSchema#dateTime",
-        "Ende":"http://www.w3.org/2001/XMLSchema#dateTime",
-        "ArtDesRuhens": "schema:ArtDesRuhens"
-       }
-
-      }
     }
   }
 }

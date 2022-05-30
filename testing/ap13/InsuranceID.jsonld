@@ -1,7 +1,7 @@
 {
   "@context": {
     "w3ccred": "https://www.w3.org/2018/credentials#",
-    "schema-id": "123",
+    "schema-id": "https://example.org/examples#",
     "InsuranceId": {
       "@id": "schema-id"
     },

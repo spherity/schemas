@@ -23,60 +23,18 @@
         "image": "http://schema.org/image"
       }
     },
-    "AllgemeineVersicherungsdaten":{
-      "@id":"https://w3id.org/vaccination#VaccinationEvent",
-      "@context":{
-         "@version":1.1,
-         "@protected":true,
-         "id":"@id",
-         "type":"@type",
-         "schema":"http://schema.org/",
-         "name":"schema:name",
-         "card_type":"schema:card_type",
-         "use":"schema:use",
-         "Versicherter":{
-            "id":"@id",
-            "type":"@type",
-            "schema":"http://schema.org/",
-            "Versicherungsschutz":{
-               "id":"@id",
-               "type":"@type",
-               "schema":"http://schema.org/",
-               "Beginn":"http://www.w3.org/2001/XMLSchema#dateTime",
-               "Ende":"http://www.w3.org/2001/XMLSchema#dateTime",
-               "Kostentraeger":{
-                  "id":"@id",
-                  "type":"@type",
-                  "schema":"http://schema.org/",
-                  "base":{
-                     "id":"@id",
-                     "type":"@type",
-                     "schema":"http://schema.org/",
-                     "name":"schema:AbrechnenderKostentraeger",
-                     "type_vsd":"Kostentraeger"
-                  }
-               }
-            }
-         }
-      }
-   },
     "PersoenlicheVersichertendaten": {
-      "@id": "https://w3id.org/vaccination#VaccineRecipient",
+      "@id": "https://example.org/examples#",
       "@context": {
         "@version": 1.1,
         "@protected": true,
         "id": "@id",
         "type": "@type",
-        "schema":"http://schema.org/",
-        "name":"schema:name",
-        "card_type":"schema:card_type",
-        "use":"schema:use",
         "Versicherter": {
           "id": "@id",
           "type": "@type",
-          "schema":"http://schema.org/",
-          "Versicherten_ID":"schema:ID",
-          "Person":{
+       
+                   "Person":{
             "id": "@id",
             "type": "@type",
             "schema":"http://schema.org/",
@@ -84,56 +42,13 @@
             "familyName": "http://schema.org/familyName",
             "gender": "http://schema.org/gender",
             "givenName": "http://schema.org/givenName",
-            "Vorsatzwort":"schema:Vorsatzwort",
-            "Namenszusatz":"schema:Namenszusatz",
-            "Titel":"schema:Titel",
-            "addressStreet": "schema:addressStreet",
-            "PostfachAdresse":"schema:PostfachAdresse"
+            "Vorsatzwort":"ex:Vorsatzwort",
+            "Namenszusatz":"ex:Namenszusatz",
+            "Titel":"ex:Titel",
+            "addressStreet": "ex:addressStreet",
+            "PostfachAdresse":"ex:PostfachAdresse"
           }
         }
-      }
-    },
-    "GeschuetzteVersichertendaten": {
-      "@context": {
-        "@version": 1.1,
-        "@protected": true,
-        "id": "@id",
-        "type": "@type",
-        "schema":"http://schema.org/",
-        "name":"schema:name",
-        "card_type":"schema:card_type",
-        "use":"schema:use",
-       
-        "Zuzahlungsstatus": {
-          "id": "@id",
-        "type": "@type",
-        "schema":"http://schema.org/",
-        "Status":"schema:Status",
-        "Gueltig_bis":"http://www.w3.org/2001/XMLSchema#dateTime"
-
-
-
-        },
-       "BesonderePersonengruppe":"schema:BesonderePersonengruppe",
-       "DMP_Kennzeichnung":"schema:DMP_Kennzeichnung",
-       "Selektivvertraege":{
-        "id": "@id",
-        "type": "@type",
-        "schema":"http://schema.org/",
-        "Aerztlich":"schema:Aerztlich",
-        "Zahnaerztlich":"schema:Zahnaerztlich",
-        "Art":"schema:Art"
-
-       },
-       "RuhenderLeistungsanspruch":{
-        "id": "@id",
-        "type": "@type",
-        "schema":"http://schema.org/",
-        "Beginn":"http://www.w3.org/2001/XMLSchema#dateTime",
-        "Ende":"http://www.w3.org/2001/XMLSchema#dateTime",
-        "ArtDesRuhens": "schema:ArtDesRuhens"
-       }
-
       }
     }
   }

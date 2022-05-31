@@ -10,19 +10,7 @@
     "image": "http://schema.org/image",
     "ex": "https://example.org/examples#",
 
-    "InsuranceID": {
-        "@id": "ex:InsuranceID",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true,
-        "id": "@id",
-        "type": "@type",
-        "description": "http://schema.org/description",
-        "identifier": "http://schema.org/identifier",
-        "name": "http://schema.org/name",
-        "image": "http://schema.org/image"
-      }
-    },
+    
     "PersoenlicheVersichertendaten": {
       "@id": "https://example.org/examples#",
       "@context": {

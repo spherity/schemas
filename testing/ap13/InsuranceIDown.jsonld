@@ -2,42 +2,57 @@
   "@context": {
     "@version": 1.1,
     "@protected": true,
-    "id": "@id",
-    "type": "@type",
+    "ex": "https://example.org/examples#",
+    "schema": "http://schema.org/",
+    "name": "http://schema.org/name",
     "description": "http://schema.org/description",
     "identifier": "http://schema.org/identifier",
-    "name": "http://schema.org/name",
-    "image": "http://schema.org/image",
-    "ex": "https://example.org/examples#",
+    "image": {"@id": "http://schema.org/image", "@type": "@id"},
 
-    
-    "PersoenlicheVersichertendaten": {
-      "@id": "https://example.org/examples#",
+    "InsuranceId": {
+      "@id": "ex:InsuranceId",
       "@context": {
         "@version": 1.1,
         "@protected": true,
+
         "id": "@id",
         "type": "@type",
-        "Versicherter": {
-          "id": "@id",
-          "type": "@type",
-       
-                   "Person":{
-            "id": "@id",
-            "type": "@type",
-            "schema":"http://schema.org/",
-            "Geburtsdatum":"http://www.w3.org/2001/XMLSchema#dateTime",
-            "familyName": "http://schema.org/familyName",
-            "gender": "http://schema.org/gender",
-            "givenName": "http://schema.org/givenName",
-            "Vorsatzwort":"ex:Vorsatzwort",
-            "Namenszusatz":"ex:Namenszusatz",
-            "Titel":"ex:Titel",
-            "addressStreet": "ex:addressStreet",
-            "PostfachAdresse":"ex:PostfachAdresse"
-          }
-        }
+
+        "description": "http://schema.org/description",
+        "name": "http://schema.org/name",
+        "identifier": "http://schema.org/identifier",
+        "image": {"@id": "http://schema.org/image", "@type": "@id"}
       }
-    }
+    },
+
+    "versicherter": {
+      "@id": "ex:versicherter",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+        "dateofBirth": {"@id": "schema:DateofBirth", "@type": "xsd:dateTime"},
+        "familyName": "schema:familyName",
+       
+        "gender": "schema:gender",
+        "firstName": "schema:firstName",
+        "givenName": "schema:givenName",
+
+        "vorsatzwort": "schema:vorsatzwort",
+        "namenszusatz": "schema:namenszusatz",
+        "titel": "schema:titel",
+        "addressStreet": "schema:addressStreet",
+        "postfachAdresse": "schema:postfachAdresse"
+
+      }
+    },
+
+    "Person": "http://schema.org/Person"
   }
 }

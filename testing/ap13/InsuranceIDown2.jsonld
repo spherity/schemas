@@ -40,29 +40,49 @@
             "id":"@id",
             
             "@context":{
-              "type":"@type",
-            "schema":"http://schema.org/",
+              "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema":"http://schema.org/",
+        "name":"schema:name",
+        "card_type":"schema:card_type",
+        "use":"schema:use",
 
             "Versicherungsschutz":{
                "id":"@id",
 
                "@context":{
-               "type":"@type",
-               "schema":"http://schema.org/",
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "schema":"http://schema.org/",
+                "name":"schema:name",
+                "card_type":"schema:card_type",
+                "use":"schema:use",
                "Beginn":"http://www.w3.org/2001/XMLSchema#dateTime",
                "Ende":"http://www.w3.org/2001/XMLSchema#dateTime",
                "Kostentraeger":{
                   "id":"@id",
 
                   "@context":{
-                  "type":"@type",
-                  "schema":"http://schema.org/",
+                    "@protected": true,
+                    "id": "@id",
+                    "type": "@type",
+                    "schema":"http://schema.org/",
+                    "name":"schema:name",
+                    "card_type":"schema:card_type",
+                    "use":"schema:use",
                   "base":{
                      "id":"@id",
 
                      "@context":{
-                     "type":"@type",
-                     "schema":"http://schema.org/",
+
+                    "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema":"http://schema.org/",
+               "card_type":"schema:card_type",
+        "use":"schema:use",
                      "name":"schema:AbrechnenderKostentraeger",
                      "type_vsd":"Kostentraeger"
                      }

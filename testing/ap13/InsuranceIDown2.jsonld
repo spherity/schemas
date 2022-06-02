@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "ex": "https://example.org/examples#",
+    "schema": "http://schema.org/",
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "identifier": "http://schema.org/identifier",
+    "image": {"@id": "http://schema.org/image", "@type": "@id"},
+
+    "InsuranceId": {
+      "@id": "ex:InsuranceId",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "description": "http://schema.org/description",
+        "name": "http://schema.org/name",
+        "identifier": "http://schema.org/identifier",
+        "image": {"@id": "http://schema.org/image", "@type": "@id"}
+      }
+    },
+    "PersoenlicheVersichertendaten": {
+      "@id": "ex:PersoenlicheVersichertendaten",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema":"http://schema.org/",
+        "name":"schema:name",
+        "card_type":"schema:card_type",
+        "use":"schema:use",
+    "versicherter": {
+      "@id": "ex:versicherter",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+        "dateofBirth": {"@id": "schema:DateofBirth", "@type": "xsd:dateTime"},
+        "familyName": "schema:familyName",
+       
+        "gender": "schema:gender",
+        "firstName": "schema:firstName",
+        "givenName": "schema:givenName",
+
+        "vorsatzwort": "schema:vorsatzwort",
+        "namenszusatz": "schema:namenszusatz",
+        "titel": "schema:titel",
+        "addressStreet": "schema:addressStreet",
+        "postfachAdresse": "schema:postfachAdresse"
+
+      }
+    }
+  }
+},
+    "Person": "http://schema.org/Person"
+  }
+}

@@ -38,27 +38,43 @@
          "use":"schema:use",
          "Versicherter":{
             "id":"@id",
-            "type":"@type",
+            
+            "@context":{
+              "type":"@type",
             "schema":"http://schema.org/",
+
             "Versicherungsschutz":{
                "id":"@id",
+
+               "@context":{
                "type":"@type",
                "schema":"http://schema.org/",
                "Beginn":"http://www.w3.org/2001/XMLSchema#dateTime",
                "Ende":"http://www.w3.org/2001/XMLSchema#dateTime",
                "Kostentraeger":{
                   "id":"@id",
+
+                  "@context":{
                   "type":"@type",
                   "schema":"http://schema.org/",
                   "base":{
                      "id":"@id",
+
+                     "@context":{
                      "type":"@type",
                      "schema":"http://schema.org/",
                      "name":"schema:AbrechnenderKostentraeger",
                      "type_vsd":"Kostentraeger"
+                     }
                   }
+                }
+
                }
+              }
+
             }
+          }
+            
          }
       }
    },

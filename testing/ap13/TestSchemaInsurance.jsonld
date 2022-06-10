@@ -1,0 +1,56 @@
+{
+    "@context": {
+      "@version": 1.1,
+      "@protected": true,
+      "ex": "https://example.org/examples#",
+      "schema": "http://schema.org/",
+      "name": "http://schema.org/name",
+      "description": "http://schema.org/description",
+      "identifier": "http://schema.org/identifier",
+      "image": {"@id": "http://schema.org/image", "@type": "@id"},
+  
+      "IDCard": {
+        "@id": "ex:IDCard",
+        "@context": {
+          "@version": 1.1,
+          "@protected": true,
+  
+          "id": "@id",
+          "type": "@type",
+  
+          "description": "http://schema.org/description",
+          "name": "http://schema.org/name",
+          "identifier": "http://schema.org/identifier",
+          "image": {"@id": "http://schema.org/image", "@type": "@id"}
+        }
+      },
+  
+      "ID": {
+        "@id": "ex:ID",
+        "@context": {
+          "@version": 1.1,
+          "@protected": true,
+  
+          "id": "@id",
+          "type": "@type",
+  
+          "schema": "http://schema.org/",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+  
+          "addressCountry": "schema:addressCountry",
+          "dateofBirth": {"@id": "schema:DateofBirth", "@type": "xsd:dateTime"},
+          "familyName": "schema:familyName",
+          "firstName": "schema:firstName",
+          "birthName": "schema:birthName",
+          "addressCity": "schema:addressCity",
+          "addresszipCode": "schema:addresszipCode",
+          "placeofBirth": "schema:placeofBirth",
+          "academicTitle": "schema:academicTitle",
+          "addressStreet": "schema:addressStreet"
+
+        }
+      },
+  
+      "Person": "http://schema.org/Person"
+    }
+  }

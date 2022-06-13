@@ -136,22 +136,31 @@
         "card_type":"schema:card_type",
         "use":"schema:use",
         
-     
-        "zuzahlungsstatus": {
-         "id": "ex:zuzahlungsstatus",
+        "versicherter":{
+         "@id":"ex:versicherter",
          "@context":{
-           "@version":1.1,
-           "@protected":true,
-           "id":"@id",
-           "type": "@type",
-           "schema":"http://schema.org/",
-           "xsd":"http://www.w3.org/2001/XMLSchema#",
-           "Status":"schema:Status",
-           "Gueltig_bis":"http://www.w3.org/2001/XMLSchema#dateTime"
+            "@version":1.1,
+            "@protected":true,
+            "id":"@id",
+            "type":"@type",
+            "schema":"http://schema.org/",
+            "xsd":"http://www.w3.org/2001/XMLSchema#",
+
+            "dateofBirth":{
+               "@id":"schema:DateofBirth",
+               "@type":"xsd:dateTime"
+            },
+            "familyName":"schema:familyName",
+            "gender":"schema:gender",
+            "firstName":"schema:firstName",
+            "givenName":"schema:givenName",
+            "vorsatzwort":"schema:vorsatzwort",
+            "namenszusatz":"schema:namenszusatz",
+            "titel":"schema:titel",
+            "addressStreet":"schema:addressStreet",
+            "postfachAdresse":"schema:postfachAdresse"
          }
-
-
-       }
+      }
 
       }
     },

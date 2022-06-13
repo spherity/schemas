@@ -151,23 +151,11 @@
          }
 
 
-       },
-       
-       
-       
-       "selektivvertraege":{
-        "id": "ex:selektivvertraege",
-        "@context":{
-         "@version": 1.1,
-         "@protected": true,
-         "id": "@id",
-        "type": "@type",
-        "schema":"http://schema.org/",
-        "Aerztlich":"schema:Aerztlich",
-        "Zahnaerztlich":"schema:Zahnaerztlich",
-        "Art":"schema:Art"
-        }
        }
+       
+       
+       
+      
     
 
       }

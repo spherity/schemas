@@ -135,32 +135,52 @@
         "name":"schema:name",
         "card_type":"schema:card_type",
         "use":"schema:use",
-        "versicherter":{
-         "@id":"ex:versicherter",
-         "@context":{
-            "@version":1.1,
-            "@protected":true,
-            "id":"@id",
-            "type":"@type",
-            "schema":"http://schema.org/",
-            "xsd":"http://www.w3.org/2001/XMLSchema#",
-            "dateofBirth":{
-               "@id":"schema:DateofBirth",
-               "@type":"xsd:dateTime"
-            },
-            "familyName":"schema:familyName",
-            "gender":"schema:gender",
-            "firstName":"schema:firstName",
-            "givenName":"schema:givenName",
-            "vorsatzwort":"schema:vorsatzwort",
-            "namenszusatz":"schema:namenszusatz",
-            "titel":"schema:titel",
-            "addressStreet":"schema:addressStreet",
-            "postfachAdresse":"schema:postfachAdresse"
-         }
-      }
 
-      
+     
+        "zuzahlungsstatus": {
+         "id": "ex:zuzahlungsstatus",
+         "@context":{
+           "@version":1.1,
+           "@protected":true,
+           "id":"@id",
+           "type": "@type",
+           "schema":"http://schema.org/",
+           "xsd":"http://www.w3.org/2001/XMLSchema#",
+           "Status":"schema:Status",
+           "Gueltig_bis":"http://www.w3.org/2001/XMLSchema#dateTime"
+         }
+
+
+       },
+
+       
+       
+       "selektivvertraege":{
+        "id": "ex:selektivvertraege",
+        "@context":{
+         "@version":1.1,
+         "@protected":true,
+         "id":"@id",
+        "type": "@type",
+        "schema":"http://schema.org/",
+        "Aerztlich":"schema:Aerztlich",
+        "Zahnaerztlich":"schema:Zahnaerztlich",
+        "Art":"schema:Art"
+        }
+       },
+       "ruhenderLeistungsanspruch":{
+        "id": "ex:ruhenderLeistungsanspruch",
+        "@context":{
+         "@version":1.1,
+         "@protected":true,
+         "id":"@id",
+        "type": "@type",
+        "schema":"http://schema.org/",
+        "Beginn":"http://www.w3.org/2001/XMLSchema#dateTime",
+        "Ende":"http://www.w3.org/2001/XMLSchema#dateTime",
+        "ArtDesRuhens": "schema:ArtDesRuhens"
+        }
+       }
 
       }
     },

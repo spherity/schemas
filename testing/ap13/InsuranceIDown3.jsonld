@@ -135,10 +135,12 @@
         "name":"schema:name",
         "card_type":"schema:card_type",
         "use":"schema:use",
-       
+        "BesonderePersonengruppe":"schema:BesonderePersonengruppe",
+        "DMP_Kennzeichnung":"schema:DMP_Kennzeichnung",
         "Zuzahlungsstatus": {
           "id": "ex:Zuzahlungsstatus",
           "@context":{
+            "@version":1.1,
             "id":"@id",
         "type": "@type",
         "schema":"http://schema.org/",
@@ -148,11 +150,13 @@
 
 
         },
-       "BesonderePersonengruppe":"schema:BesonderePersonengruppe",
-       "DMP_Kennzeichnung":"schema:DMP_Kennzeichnung",
+
+       
+       
        "Selektivvertraege":{
         "id": "ex:Selektivvertraege",
         "@context":{
+         "@version":1.1,
          "id":"@id",
         "type": "@type",
         "schema":"http://schema.org/",
@@ -164,6 +168,7 @@
        "RuhenderLeistungsanspruch":{
         "id": "ex:RuhenderLeistungsanspruch",
         "@context":{
+         "@version":1.1,
          "id":"@id",
         "type": "@type",
         "schema":"http://schema.org/",

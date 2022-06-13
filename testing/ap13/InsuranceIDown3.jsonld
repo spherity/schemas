@@ -136,6 +136,7 @@
         "card_type":"schema:card_type",
         "use":"schema:use",
         
+     
         "zuzahlungsstatus":{
          "@id":"ex:zuzahlungsstatus",
          "@context":{
@@ -146,9 +147,13 @@
             "schema":"http://schema.org/",
             "xsd":"http://www.w3.org/2001/XMLSchema#",
 
+            "Status":"schema:Status",
+            "Gueltig_bis":"http://www.w3.org/2001/XMLSchema#dateTime"
             
          }
-      }
+
+
+       }
 
       }
     },

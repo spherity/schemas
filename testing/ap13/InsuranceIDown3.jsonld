@@ -134,11 +134,9 @@
         "schema":"http://schema.org/",
         "name":"schema:name",
         "card_type":"schema:card_type",
-        "use":"schema:use",
+        "use":"schema:use"
 
 
-        "BesonderePersonengruppe":"schema:BesonderePersonengruppe",
-        "DMP_Kennzeichnung":"schema:DMP_Kennzeichnung"
       
 
       }

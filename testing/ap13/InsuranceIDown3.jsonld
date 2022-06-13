@@ -135,10 +135,11 @@
         "name":"schema:name",
         "card_type":"schema:card_type",
         "use":"schema:use",
-        
+        "BesonderePersonengruppe": "string",
+        "DMP_Kennzeichnung": "string",
      
-        "zuzahlungsstatus": {
-         "@id": "ex:zuzahlungsstatus",
+        "Zuzahlungsstatus": {
+         "@id": "ex:Zuzahlungsstatus",
          "@context":{
            "@version":1.1,
            "@protected":true,

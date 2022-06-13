@@ -137,7 +137,7 @@
         "use":"schema:use",
        
         "Zuzahlungsstatus": {
-          "id": "@id",
+          "id": "ex:Zuzahlungsstatus",
           "@context":{
             "id":"@id",
         "type": "@type",
@@ -151,7 +151,7 @@
        "BesonderePersonengruppe":"schema:BesonderePersonengruppe",
        "DMP_Kennzeichnung":"schema:DMP_Kennzeichnung",
        "Selektivvertraege":{
-        "id": "@id",
+        "id": "ex:Selektivvertraege",
         "@context":{
          "id":"@id",
         "type": "@type",
@@ -162,7 +162,7 @@
         }
        },
        "RuhenderLeistungsanspruch":{
-        "id": "@id",
+        "id": "ex:RuhenderLeistungsanspruch",
         "@context":{
          "id":"@id",
         "type": "@type",

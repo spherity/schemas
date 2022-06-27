@@ -1,0 +1,231 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "ex": "https://example.org/examples#",
+        "schema": "http://schema.org/",
+        "name": "http://schema.org/name",
+        "description": "http://schema.org/description",
+        "identifier": "http://schema.org/identifier",
+        "image": {
+            "@id": "http://schema.org/image",
+            "@type": "@id"
+        },
+        "InsuranceId": {
+            "@id": "ex:InsuranceId",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "description": "http://schema.org/description",
+                "name": "http://schema.org/name",
+                "identifier": "http://schema.org/identifier",
+                "image": {
+                    "@id": "http://schema.org/image",
+                    "@type": "@id"
+                }
+            }
+        },
+        "AllgemeineVersicherungsdaten": {
+            "@id": "ex:AllgemeineVersicherungsdaten",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "schema": "http://schema.org/",
+                "name": "schema:name",
+                "card_type": "schema:card_type",
+                "use": "schema:use",
+                "Versicherter": {
+                    "@id": "ex:Versicherter",
+                    "@context": {
+                        "@version": 1.1,
+                        "@protected": true,
+                        "id": "@id",
+                        "type": "@type",
+                        "schema": "http://schema.org/",
+                        "xsd": "http://www.w3.org/2001/XMLSchema#",
+                        "Versicherungsschutz": {
+                            "@id": "ex:Versicherungsschutz",
+                            "@context": {
+                                "@version": 1.1,
+                                "@protected": true,
+                                "id": "@id",
+                                "type": "@type",
+                                "schema": "http://schema.org/",
+                                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                "Beginn": "http://www.w3.org/2001/XMLSchema#dateTime",
+                                "Ende": "http://www.w3.org/2001/XMLSchema#dateTime",
+                                "Kostentraeger": {
+                                    "@id": "ex:Kostentraeger",
+                                    "@context": {
+                                        "@version": 1.1,
+                                        "@protected": true,
+                                        "id": "@id",
+                                        "type": "@type",
+                                        "schema": "http://schema.org/",
+                                        "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                        "base": {
+                                            "@id": "ex:base",
+                                            "@context": {
+                                                "@version": 1.1,
+                                                "@protected": true,
+                                                "id": "@id",
+                                                "type": "@type",
+                                                "schema": "http://schema.org/",
+                                                "name": "schema:AbrechnenderKostentraeger",
+                                                "type_vsd": "Kostentraeger"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "Zusatzinfos": {
+                            "@id": "ex:Zusatzinfos",
+                            "@context": {
+                                "@version": 1.1,
+                                "@protected": true,
+                                "id": "@id",
+                                "type": "@type",
+                                "schema": "http://schema.org/",
+                                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                "ZusatzinfosGKV": {
+                                    "@id": "ex:ZusatzinfosGKV",
+                                    "@context": {
+                                        "@version": 1.1,
+                                        "@protected": true,
+                                        "id": "@id",
+                                        "type": "@type",
+                                        "schema": "http://schema.org/",
+                                        "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                        "Versichertenart": "schema:Versichertenart",
+                                        "Zusatzinfos_Abrechnung_GKV": {
+                                            "@id": "ex:Zusatzinfos_Abrechnung_GKV",
+                                            "@context": {
+                                                "@version": 1.1,
+                                                "@protected": true,
+                                                "id": "@id",
+                                                "type": "@type",
+                                                "schema": "http://schema.org/",
+                                                "type_vsd": "Kostentraeger",
+                                                "Kostenerstattung": {
+                                                    "@id": "ex:Kostenerstattung",
+                                                    "@context": {
+                                                        "@version": 1.1,
+                                                        "@protected": true,
+                                                        "id": "@id",
+                                                        "type": "@type",
+                                                        "schema": "http://schema.org/",
+                                                        "type_vsd": "Kostentraeger",
+                                                        "AerztlicheVersorgung": "schema:AerztlicheVersorgung",
+                                                        "ZahnaerztlicheVersorgung": "schema:ZahnaerztlicheVersorgung",
+                                                        "StationaererBereich": "schema:StationaererBereich",
+                                                        "VeranlassteLeistungen": "schema:VeranlassteLeistungen"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "PersoenlicheVersichertendaten": {
+            "@id": "ex:PersoenlicheVersichertendaten",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "schema": "http://schema.org/",
+                "name": "schema:name",
+                "card_type": "schema:card_type",
+                "use": "schema:use",
+                "versicherter": {
+                    "@id": "ex:versicherter",
+                    "@context": {
+                        "@version": 1.1,
+                        "@protected": true,
+                        "id": "@id",
+                        "type": "@type",
+                        "schema": "http://schema.org/",
+                        "xsd": "http://www.w3.org/2001/XMLSchema#",
+                        "dateofBirth": {
+                            "@id": "schema:DateofBirth",
+                            "@type": "xsd:dateTime"
+                        },
+                        "familyName": "schema:familyName",
+                        "gender": "schema:gender",
+                        "firstName": "schema:firstName",
+                        "givenName": "schema:givenName",
+                        "vorsatzwort": "schema:vorsatzwort",
+                        "namenszusatz": "schema:namenszusatz",
+                        "titel": "schema:titel",
+                        "addressStreet": "schema:addressStreet",
+                        "postfachAdresse": "schema:postfachAdresse"
+                    }
+                }
+            }
+        },
+        "GeschuetzteVersichertendaten": {
+            "@id": "ex:GeschuetzteVersichertendaten",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "schema": "http://schema.org/",
+                "name": "schema:name",
+                "card_type": "schema:card_type",
+                "use": "schema:use",
+                "zuzahlungsstatus": {
+                    "@id": "ex:zuzahlungsstatus",
+                    "@context": {
+                        "@version": 1.1,
+                        "@protected": true,
+                        "id": "@id",
+                        "type": "@type",
+                        "schema": "http://schema.org/",
+                        "xsd": "http://www.w3.org/2001/XMLSchema#",
+                        "Status": "schema:Status",
+                        "Gueltig_bis": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    }
+                },
+                "selektivvertraege": {
+                    "@id": "ex:selektivvertraege",
+                    "@context": {
+                        "@version": 1.1,
+                        "@protected": true,
+                        "id": "@id",
+                        "type": "@type",
+                        "schema": "http://schema.org/",
+                        "Aerztlich": "schema:Aerztlich",
+                        "Zahnaerztlich": "schema:Zahnaerztlich",
+                        "Art": "schema:Art"
+                    }
+                },
+                "ruhenderLeistungsanspruch": {
+                    "@id": "ex:ruhenderLeistungsanspruch",
+                    "@context": {
+                        "@version": 1.1,
+                        "@protected": true,
+                        "id": "@id",
+                        "type": "@type",
+                        "schema": "http://schema.org/",
+                        "Beginn": "http://www.w3.org/2001/XMLSchema#dateTime",
+                        "Ende": "http://www.w3.org/2001/XMLSchema#dateTime",
+                        "ArtDesRuhens": "schema:ArtDesRuhens"
+                    }
+                }
+
+            }
+        },
+        "Person": "http://schema.org/Person"
+    }
+}

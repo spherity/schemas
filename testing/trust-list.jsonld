@@ -1,0 +1,124 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+
+    "id": "@id",
+    "type": "@type",
+    "tl": "https://spherity.github.io/schemas/testing/trust-list.jsonld#",
+    "schema": "http://schema.org/",
+    "TrustList": "tl:TrustList",
+    "metadata": {
+      "@id": "tl:metadata",
+      "@context": {
+        "operator": {
+          "@id": "tl:operator",
+          "@context": {
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "name": "schema:name",
+            "email": "schema:email",
+            "address": "schema:text"
+          }
+        },
+        "versionIdentifier": {
+          "@id": "tl:version",
+          "@type": "schema:text"
+        },
+        "versionUrl": {
+          "@id": "tl:versionUrl",
+          "@type": "@id"
+        },
+        "validFrom": {
+          "@id": "tl:validFrom",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "validUntil": {
+          "@id": "tl:validUntil",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "activeUrl": {
+          "@id": "tl:activeUrl",
+          "@type": "schema:URL"
+        },
+        "getStatusEndpoint": {
+          "@id": "tl:getStatusEndpoint",
+          "@type": "schema:URL"
+        },
+        "previousTrustListVersions": {
+          "@id": "tl:previousTrustListVersions",
+          "@container": "@set"
+        },
+        "legalNotice": {
+          "@id": "tl:legalNotice",
+          "@type": "schema:URL"
+        },
+        "schemeTerritory": {
+          "@id": "tl:schemeTerritory",
+          "@type": "schema:addressCountry"
+        },
+        "listIssueDateTime": {
+          "@id": "tl:listIssueDateTime",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      }
+    },
+    "trustedIssuers": {
+      "@id": "tl:trustedIssuers",
+      "@container": "@set",
+      "@context": {
+        "id": {
+          "@id": "@id",
+          "@type": "schema:text"
+        },
+        "name": {
+          "@id": "tl:trustedIssuerName",
+          "@type": "schema:name"
+        },
+        "address": {
+          "@id": "tl:trustedIssuerAddress",
+          "@type": "schema:text"
+        },
+        "email": {
+          "@id": "tl:trustedIssuerEmail",
+          "@type": "schema:email"
+        },
+        "validFrom": {
+          "@id": "tl:validFrom",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "credentials": {
+          "@id": "tl:trustedIssuerCredentials",
+          "@container": "@set",
+          "@context": {
+            "credentialType": {
+              "@id": "tl:credentialType",
+              "@type": "schema:text"
+            },
+            "description": {
+              "@id": "tl:credentialDescription",
+              "@type": "schema:text"
+            },
+            "levelOfAssurance": {
+              "@id": "tl:credentialLevelOfAssurance",
+              "@type": "schema:text"
+            },
+            "schemaURI": {
+              "@id": "tl:credentialSchemaURI",
+              "@type": "schema:URL"
+            },
+            "schemaVersion": {
+              "@id": "tl:credentialSchemaVersion",
+              "@type": "schema:text"
+            },
+            "validFrom": {
+              "@id": "tl:credentialValidFrom",
+              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -17,13 +17,18 @@
             "@version": 1.1,
             "id": "@id",
             "type": "@type",
+            "did": "schema:text",
             "name": "schema:name",
             "email": "schema:email",
             "address": "schema:text"
           }
         },
+        "name": {
+          "@id": "tl:trustListName",
+          "@type": "schema:text"
+        },
         "versionIdentifier": {
-          "@id": "tl:version",
+          "@id": "tl:versionIdentifier",
           "@type": "schema:text"
         },
         "versionUrl": {
@@ -32,11 +37,11 @@
         },
         "validFrom": {
           "@id": "tl:validFrom",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+          "@type": "schema:validFrom"
         },
         "validUntil": {
           "@id": "tl:validUntil",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+          "@type": "schema:validUntil"
         },
         "activeUrl": {
           "@id": "tl:activeUrl",
@@ -46,9 +51,19 @@
           "@id": "tl:getStatusEndpoint",
           "@type": "schema:URL"
         },
-        "previousTrustListVersions": {
+        "previousVersions": {
           "@id": "tl:previousTrustListVersions",
-          "@container": "@set"
+          "@container": "@set",
+          "@context": {
+            "versionIdentifier": {
+              "@id": "tl:previousVersionIdentifier",
+              "@type": "schema:text"
+            },
+            "versionUrl": {
+              "@id": "tl:previousVersionUrl",
+              "@type": "@id"
+            }
+          }
         },
         "legalNotice": {
           "@id": "tl:legalNotice",
@@ -58,9 +73,9 @@
           "@id": "tl:schemeTerritory",
           "@type": "schema:addressCountry"
         },
-        "listIssueDateTime": {
+        "issueDateTime": {
           "@id": "tl:listIssueDateTime",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+          "@type": "schema:dateTime"
         }
       }
     },
@@ -68,7 +83,7 @@
       "@id": "tl:trustedIssuers",
       "@container": "@set",
       "@context": {
-        "id": {
+        "did": {
           "@id": "@id",
           "@type": "schema:text"
         },
@@ -86,7 +101,7 @@
         },
         "validFrom": {
           "@id": "tl:validFrom",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+          "@type": "schema:validFrom"
         },
         "credentials": {
           "@id": "tl:trustedIssuerCredentials",
@@ -114,7 +129,7 @@
             },
             "validFrom": {
               "@id": "tl:credentialValidFrom",
-              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+              "@type": "schema:validFrom"
             }
           }
         }

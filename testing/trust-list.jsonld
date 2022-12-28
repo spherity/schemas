@@ -17,10 +17,22 @@
             "@version": 1.1,
             "id": "@id",
             "type": "@type",
-            "did": "schema:text",
-            "name": "schema:name",
-            "email": "schema:email",
-            "address": "schema:text"
+            "did": {
+              "@id": "tl:operatorDid",
+              "@type": "@id"
+            },
+            "name": {
+              "@id": "tl:operatorName",
+              "@type" : "schema:name"
+            },
+            "email": {
+              "@id": "tl:operatorEmail",
+              "@type": "schema:email"
+            },
+            "address": {
+              "@id": "tl:operatorAddress",
+              "@type": "schema:text"
+            }
           }
         },
         "name": {
@@ -84,8 +96,8 @@
       "@container": "@set",
       "@context": {
         "did": {
-          "@id": "@id",
-          "@type": "schema:text"
+          "@id": "tl:trustedIssuerDid",
+          "@type": "@id"
         },
         "name": {
           "@id": "tl:trustedIssuerName",

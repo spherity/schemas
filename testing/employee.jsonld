@@ -4,6 +4,7 @@
     "id": "@id",
 	  "type": "@type",
     "emp": "https://spherity.github.io/schemas/testing/employee.jsonld#",
+    "termsOfUse": "https://spherity.github.io/schemas/testing/termsOfUsejsonld#",
     "schema": "https://schema.org/",
     "Employee": "emp:Employee",
     "person": {

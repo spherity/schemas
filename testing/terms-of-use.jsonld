@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+  "type": "@type",
+    "tou": "https://spherity.github.io/schemas/testing/terms-of-use.jsonld#",
+    "TermsOfUse": "tou:TermsOfUse",
+    "schema": "https://schema.org/",
+    "profile": {
+      "@id": "tou:profile",
+      "@type": "schema:URL"
+    },
+    "verification": {
+      "@id": "tou:verification",
+      "@container": "@set",
+      "@context": {
+        "assigner": {
+          "@id": "tou:verificationAssigner",
+          "@type": "schema:URL"
+        },
+        "assignee": {
+          "@id": "tou:verificationAssignee",
+          "@type": "schema:text"
+        },
+        "target": {
+          "@id": "tou:verificationTarget",
+          "@type": "schema:URL"
+        },
+        "trustDomain": {
+          "@id": "tou:verificationTrustDomain",
+          "@type": "schema:URL"
+        },
+        "action": {
+          "@id": "tou:verificationAction",
+          "@type": "schema:text"
+        }
+      }
+    },
+    "prohibitions": {
+      "@id": "tou:prohibition",
+      "@container": "@set"
+    }
+  }
+}

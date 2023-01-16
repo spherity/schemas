@@ -2,14 +2,14 @@
   "@context": {
     "@version": 1.1,
     "id": "@id",
-	  "type": "@type",
+    "type": "@type",
     "emp": "https://spherity.github.io/schemas/testing/employee.jsonld#",
     "termsOfUse": "https://spherity.github.io/schemas/testing/termsOfUsejsonld#",
     "schema": "https://schema.org/",
     "Employee": "emp:Employee",
     "person": {
       "@id": "schema:Person",
-  	  "@type": "@id",
+      "@type": "@id",
       "@context": {
         "did": {
           "@id": "emp:personDid",
@@ -21,23 +21,23 @@
         },
         "givenName": {
           "@id": "emp:givenName",
-          "@type" : "schema:Text"
+          "@type": "schema:Text"
         },
         "familyName": {
           "@id": "emp:familyName",
-          "@type" : "schema:Text"
+          "@type": "schema:Text"
         },
         "birthDate": {
           "@id": "emp:birthDate",
-          "@type" : "schema:Date"
+          "@type": "schema:Date"
         },
         "birthPlace": {
           "@id": "emp:birthPlace",
-          "@type" : "schema:addressCountry"
+          "@type": "schema:addressCountry"
         },
         "gender": {
           "@id": "emp:birthDate",
-          "@type" : "schema:Text"
+          "@type": "schema:Text"
         }
       }
     },
@@ -51,7 +51,7 @@
         },
         "legalName": {
           "@id": "emp:legalName",
-          "@type" : "schema:Text"
+          "@type": "schema:Text"
         },
         "parentOrganization": {
           "@id": "schema:Organization",
@@ -59,7 +59,7 @@
           "@context": {
             "legalName": {
               "@id": "emp:legalName",
-              "@type" : "schema:Text"
+              "@type": "schema:Text"
             }
           }
         },

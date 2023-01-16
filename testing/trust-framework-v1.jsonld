@@ -2,9 +2,9 @@
   "@context": {
     "@version": 1.1,
     "id": "@id",
-  "type": "@type",
-    "tou": "https://spherity.github.io/schemas/testing/terms-of-use.jsonld#",
-    "TermsOfUse": "tou:TermsOfUse",
+    "type": "@type",
+    "tou": "https://spherity.github.io/schemas/testing/trust-framework.jsonld#",
+    "TrustFramework": "tou:TrustFramework",
     "schema": "https://schema.org/",
     "profile": {
       "@id": "tou:profile",

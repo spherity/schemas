@@ -10,7 +10,7 @@
       "@id": "tou:profile",
       "@type": "schema:URL"
     },
-    "LevelOfAssurance": {
+    "levelOfAssurance": {
       "@id": "tou:LevelOfAssurance",
       "@type": "schema:text"
     },

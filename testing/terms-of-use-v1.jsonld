@@ -30,8 +30,8 @@
           "@id": "tou:verificationTarget",
           "@type": "schema:URL"
         },
-        "trustScheme": {
-          "@id": "tou:verificationTrustScheme",
+        "trustDomain": {
+          "@id": "tou:verificationTrustDomain",
           "@type": "schema:URL"
         },
         "action": {

@@ -3,23 +3,23 @@
     "@version": 1.1,
     "id": "@id",
     "type": "@type",
-    "shirt": "https://spherity.github.io/schemas/testing/breathable-t-shirt.jsonld#",
-    "BreathableTShirt": "bt:BreathableTShirt",
+    "shirt": "https://spherity.github.io/schemas/testing/breathable-t-shirt.json#",
     "schema": "https://schema.org/",
+    "BreathableTShirt": "shirt:BreathableTShirt",
     "name": {
-      "@id": "schema:name",
+      "@id": "shirt:name",
       "@type": "schema:text"
     },
     "material": {
-      "@id": "bt:material",
+      "@id": "shirt:material",
       "@type": "schema:text"
     },
     "availablePrintTypes": {
-      "@id": "bt:availablePrintTypes",
+      "@id": "shirt:availablePrintTypes",
       "@type": "schema:text"
     },
     "designedBy": {
-      "@id": "bt:designedBy",
+      "@id": "shirt:designedBy",
       "@type": "schema:text"
     }
   }

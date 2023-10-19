@@ -4,7 +4,7 @@
     "id": "@id",
     "type": "@type",
     "schema": "https://schema.org/",
-    "rar": "https://spherity.github.io/schemas/testing/rcs-audit-report-v2.jsonld#",
+    "rar": "https://spherity.github.io/schemas/testing/rcs-responsible-sourcing-audit-report-v2.jsonld#",
     "RcsAuditReport": "rar:RcsAuditReport",
     "attributes": {
       "@id": "rar:attributes",

@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+    "SustainbilityReport": {
+      "@id": "https://dpp.spherity.com/2023/credentials#SustainbilityReport",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema": "https://schema.org/",
+        "report": "https://rcsglobal.com#",
+        "attributes": {
+          "@id": "report:attributes",
+          "@type": "@id",
+          "@container": "@set",
+          "environmentalImpact": "report:environmentalImpact",
+          "carbonFootprint": "report:carbonFootprint",
+          "waterUsage": "report:waterUsage",
+          "wasteManagement": "report:wasteManagement",
+          "sustainablePractices": "report:sustainablePractices",
+          "energyConsumption": "report:energyConsumption",
+          "renewableEnergyUsage": "report:renewableEnergyUsage",
+          "biodiversityConservation": "report:biodiversityConservation",
+          "sustainableSupplyChain": "report:sustainableSupplyChain",
+          "socialResponsibility": "report:socialResponsibility",
+          "employeeWellbeing": "report:employeeWellbeing",
+          "communityEngagement": "report:communityEngagement",
+          "stakeholderEngagement": "report:stakeholderEngagement",
+          "ethicalGovernance": "report:ethicalGovernance",
+          "complianceAndRegulations": "report:complianceAndRegulations",
+          "innovationForSustainability": "report:innovationForSustainability",
+          "climateChangeAdaptation": "report:climateChangeAdaptation",
+          "greenhouseGasEmissions": "report:greenhouseGasEmissions",
+          "sustainableProcurement": "report:sustainableProcurement",
+          "humanRightsPractices": "report:humanRightsPractices",
+          "fairLaborPractices": "report:fairLaborPractices",
+          "diversityAndInclusion": "report:diversityAndInclusion"
+        }
+      }
+    }
+  }
+}

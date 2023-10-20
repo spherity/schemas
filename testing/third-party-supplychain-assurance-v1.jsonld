@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+    "ThirdpartySupplyChainAssurances": {
+      "@id": "https://dpp.spherity.com/2023/credentials#ThirdPartySupplyChainAssurances",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema": "https://schema.org/",
+        "report": "https://rcsglobal.com#",
+        "attributes": {
+          "@id": "report:attributes",
+          "@type": "@id",
+          "@container": "@set",
+          "auditDate": "schema:Date",
+          "auditorName": "schema:Text",
+          "auditResult": "schema:Text",
+          "complianceLevel": "schema:Text",
+          "recommendations": "schema:Text"
+        }
+      }
+    }
+  }
+}

@@ -4,16 +4,29 @@
     "id": "@id",
     "type": "@type",
     "rar": "https://spherity.github.io/schemas/testing/third-party-supplychain-assurance-v1.jsonld#",
-    "ThirdPartySupplyChainAssurancesReport": "rar:ThirdpartySupplyChainAssurances",
+    "thirdPartyAssurance": "rar:thirdPartyAssurance",
     "schema": "https://schema.org/",
-    "ThirdpartySupplyChainAssurances": {
-      "@id": "rar:ThirdpartySupplyChainAssurances",
-      "@container": "@set",
-      "auditDate": "schema:Date",
-      "auditorName": "schema:Text",
-      "auditResult": "schema:Text",
-      "complianceLevel": "schema:Text",
-      "recommendations": "schema:Text"
+    "auditDate": {
+      "@id": "rar:auditDate",
+      "@type": "schema:Date"
+    },
+    "auditorName": {
+      "@id": "rar:auditorName",
+      "@container": "@list",
+      "@type": "schema:text"
+    },
+    "auditResult": {
+      "@id": "rar:auditResult",
+      "@type": "schema:text"
+    },
+    "complianceLevel": {
+      "@id": "rar:complianceLevel",
+      "@type": "schema:text"
+    },
+    "recommendations": {
+      "@id": "rar:recommendations",
+      "@container": "@list",
+      "@type": "schema:text"
     }
   }
 }

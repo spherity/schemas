@@ -3,22 +3,17 @@
     "@version": 1.1,
     "id": "@id",
     "type": "@type",
+    "rar": "https://spherity.github.io/schemas/testing/third-party-supplychain-assurance-v1.jsonld#",
+    "ThirdPartySupplyChainAssurancesReport": "rar:ThirdpartySupplyChainAssurances",
     "schema": "https://schema.org/",
-    "report": "https://rcsglobal.com#",
     "ThirdpartySupplyChainAssurances": {
-      "@id": "https://dpp.spherity.com/2023/credentials#ThirdPartySupplyChainAssurances",
-      "id": "@id",
-      "type": "@type",
-      "attributes": {
-        "@id": "report:attributes",
-        "@type": "@id",
-        "@container": "@set",
-        "auditDate": "schema:Date",
-        "auditorName": "schema:Text",
-        "auditResult": "schema:Text",
-        "complianceLevel": "schema:Text",
-        "recommendations": "schema:Text"
-      }
+      "@id": "rar:ThirdpartySupplyChainAssurances",
+      "@container": "@set",
+      "auditDate": "schema:Date",
+      "auditorName": "schema:Text",
+      "auditResult": "schema:Text",
+      "complianceLevel": "schema:Text",
+      "recommendations": "schema:Text"
     }
   }
 }

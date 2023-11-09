@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "rar": "https://spherity.github.io/schemas/testing/abb-end-of-life-v1.jsonld#",
+    "endoflifeCredential": "rar:endoflifeCredential",
+    "schema": "https://schema.org/",
+    "Material": {
+      "@id": "schema:Material",
+      "@type": "schema:Product"
+    },
+    "recyclable": "schema:recyclable",
+    "landfill": "schema:landfill",
+    "energyRecovery": "schema:energyRecovery",
+    "part": "schema:isPartOf"
+  }
+}

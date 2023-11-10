@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "eol": "https://spherity.github.io/schemas/testing/abb-end-of-life-v2.jsonld#",
+    "AbbEndofLife": "eol:AbbEndofLife",
+    "schema": "https://schema.org/",
+    "position": {
+      "@id": "eol:position",
+      "@container": "@list",
+      "@type": "schema:text"
+    },
+    "description": {
+      "@id": "eol:description",
+      "@container": "@list",
+      "@type": "schema:text"
+    },
+    "material": {
+      "@id": "eol:material",
+      "@container": "@list",
+      "@type": "schema:text"
+    },
+    "comment": {
+      "@id": "eol:comment",
+      "@container": "@list",
+      "@type": "schema:text"
+    }
+  }
+}

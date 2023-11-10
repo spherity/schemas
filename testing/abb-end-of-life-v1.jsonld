@@ -4,7 +4,7 @@
     "id": "@id",
     "type": "@type",
     "rar": "https://spherity.github.io/schemas/testing/abb-end-of-life-v1.jsonld#",
-    "endoflifeCredential": "rar:endoflifeCredential",
+    "EndOfLifeCredential": "rar:EndOfLifeCredential",
     "schema": "https://schema.org/",
     "position": {
       "@id": "rar:position",

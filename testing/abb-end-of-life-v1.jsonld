@@ -6,29 +6,21 @@
     "rar": "https://spherity.github.io/schemas/testing/abb-end-of-life-v1.jsonld#",
     "endoflifeCredential": "rar:endoflifeCredential",
     "schema": "https://schema.org/",
-    "name": {
-      "@id": "schema:name",
+    "position": {
+      "@id": "rar:position",
       "@type": "schema:text"
     },
-    "typeofService": {
-      "@id": "schema:typeofService",
+    "description": {
+      "@id": "rar:description",
       "@type": "schema:text"
     },
-    "Details": {
-      "@id": "schema:Details",
+    "material": {
+      "@id": "rar:material",
       "@type": "schema:text"
     },
-    "serviceProvider": {
-      "@id": "schema:serviceProvider",
+    "comment": {
+      "@id": "rar:comment",
       "@type": "schema:text"
-    },
-    "nameofPersonal": {
-      "@id": "schema:nameofPersonal",
-      "@type": "schema:text"
-    },
-    "Partnership": {
-      "@id": "schema:Partnership",
-      "@type": "schema:Text"
     }
   }
 }

@@ -1,0 +1,72 @@
+{
+    "@context": {
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "rar": "https://spherity.github.io/schemas/testing/santa-due-diligence-report-v1.jsonld#",
+      "isoCertificationCredential": "npc:NPCQACertification",
+      "schema": "https://schema.org/",
+      "sleighRenewableEnergySource": {
+        "@id": "schema:sleighRenewableEnergySource",
+        "@type": "schema:Text"
+    },
+    "zeroEmissionFlightCompliance": {
+        "@id": "schema:zeroEmissionFlightCompliance",
+        "@type": "schema:Text"
+    },
+    "magicalFuelEfficiency": {
+        "@id": "schema:magicalFuelEfficiency",
+        "@type": "schema:Text"
+    },
+    "sleighRecyclableMaterialsAudit": {
+        "@id": "schema:sleighRecyclableMaterialsAudit",
+        "@type": "schema:Text"
+    },
+    "noisePollutionDuringFlight": {
+        "@id": "schema:noisePollutionDuringFlight",
+        "@type": "schema:Text"
+    },
+    "aerodynamicDesignForEnergyConservation": {
+        "@id": "schema:aerodynamicDesignForEnergyConservation",
+        "@type": "schema:Text"
+    },
+    "wildlifeImpactAssessment": {
+        "@id": "schema:wildlifeImpactAssessment",
+        "@type": "schema:Text"
+    },
+    "sleighLifetimeCarbonFootprint": {
+        "@id": "schema:sleighLifetimeCarbonFootprint",
+        "@type": "schema:Text"
+    },
+    "renewableEnergyInnovationIntegration": {
+        "@id": "schema:renewableEnergyInnovationIntegration",
+        "@type": "schema:Text"
+    },
+    "sleighMaintenanceSustainabilityPractices": {
+        "@id": "schema:sleighMaintenanceSustainabilityPractices",
+        "@type": "schema:Text"
+    }
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

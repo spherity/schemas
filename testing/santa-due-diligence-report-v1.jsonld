@@ -6,46 +6,86 @@
       "rar": "https://spherity.github.io/schemas/testing/santa-due-diligence-report-v1.jsonld#",
       "isoCertificationCredential": "npc:NPCQACertification",
       "schema": "https://schema.org/",
-      "sleighRenewableEnergySource": {
-        "@id": "schema:sleighRenewableEnergySource",
-        "@type": "schema:Text"
-    },
-    "zeroEmissionFlightCompliance": {
-        "@id": "schema:zeroEmissionFlightCompliance",
-        "@type": "schema:Text"
-    },
-    "magicalFuelEfficiency": {
-        "@id": "schema:magicalFuelEfficiency",
-        "@type": "schema:Text"
-    },
-    "sleighRecyclableMaterialsAudit": {
-        "@id": "schema:sleighRecyclableMaterialsAudit",
-        "@type": "schema:Text"
-    },
-    "noisePollutionDuringFlight": {
-        "@id": "schema:noisePollutionDuringFlight",
-        "@type": "schema:Text"
-    },
-    "aerodynamicDesignForEnergyConservation": {
-        "@id": "schema:aerodynamicDesignForEnergyConservation",
-        "@type": "schema:Text"
-    },
-    "wildlifeImpactAssessment": {
-        "@id": "schema:wildlifeImpactAssessment",
-        "@type": "schema:Text"
-    },
-    "sleighLifetimeCarbonFootprint": {
-        "@id": "schema:sleighLifetimeCarbonFootprint",
-        "@type": "schema:Text"
-    },
-    "renewableEnergyInnovationIntegration": {
-        "@id": "schema:renewableEnergyInnovationIntegration",
-        "@type": "schema:Text"
-    },
-    "sleighMaintenanceSustainabilityPractices": {
-        "@id": "schema:sleighMaintenanceSustainabilityPractices",
-        "@type": "schema:Text"
-    }
+        "giftProductionEfficiency": {
+            "@id": "schema:giftProductionEfficiency",
+            "@type": "schema:Text"
+        },
+        "reindeerHealthMonitoring": {
+            "@id": "schema:reindeerHealthMonitoring",
+            "@type": "schema:Text"
+        },
+        "elfWorkerSatisfaction": {
+            "@id": "schema:elfWorkerSatisfaction",
+            "@type": "schema:Text"
+        },
+        "toyQualityAssurance": {
+            "@id": "schema:toyQualityAssurance",
+            "@type": "schema:Text"
+        },
+        "sleighMaintenanceRecords": {
+            "@id": "schema:sleighMaintenanceRecords",
+            "@type": "schema:Text"
+        },
+        "globalDeliveryAccuracy": {
+            "@id": "schema:globalDeliveryAccuracy",
+            "@type": "schema:Text"
+        },
+        "energyUsageInWorkshop": {
+            "@id": "schema:energyUsageInWorkshop",
+            "@type": "schema:Text"
+        },
+        "sustainableResourceUse": {
+            "@id": "schema:sustainableResourceUse",
+            "@type": "schema:Text"
+        },
+        "communityImpactAssessment": {
+            "@id": "schema:communityImpactAssessment",
+            "@type": "schema:Text"
+        },
+        "culturalSensitivityInGiftSelection": {
+            "@id": "schema:culturalSensitivityInGiftSelection",
+            "@type": "schema:Text"
+        },
+        "dataPrivacyAndSecurity": {
+            "@id": "schema:dataPrivacyAndSecurity",
+            "@type": "schema:Text"
+        },
+        "climateChangeMitigationEfforts": {
+            "@id": "schema:climateChangeMitigationEfforts",
+            "@type": "schema:Text"
+        },
+        "ethicalSupplyChainManagement": {
+            "@id": "schema:ethicalSupplyChainManagement",
+            "@type": "schema:Text"
+        },
+        "financialTransparencyAndAccountability": {
+            "@id": "schema:financialTransparencyAndAccountability",
+            "@type": "schema:Text"
+        },
+        "emergencyResponsePreparedness": {
+            "@id": "schema:emergencyResponsePreparedness",
+            "@type": "schema:Text"
+        },
+        "inclusivityInHiringPractices": {
+            "@id": "schema:inclusivityInHiringPractices",
+            "@type": "schema:Text"
+        },
+        "stakeholderEngagementAndFeedback": {
+            "@id": "schema:stakeholderEngagementAndFeedback",
+            "@type": "schema:Text"
+        },
+        "innovationInToyDesign": {
+            "@id": "schema:innovationInToyDesign",
+            "@type": "schema:Text"
+        },
+        "animalWelfareStandards": {
+            "@id": "schema:animalWelfareStandards",
+            "@type": "schema:Text"
+        },
+        "complianceWithInternationalRegulations": {
+            "@id": "schema:complianceWithInternationalRegulations",
+            "@type": "schema:Text"
+        }
     }
   }
   

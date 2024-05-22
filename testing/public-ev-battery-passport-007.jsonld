@@ -1,0 +1,316 @@
+{
+    "id": "1f9ac691-d96d-4c60-b649-387bd5edac8b",
+    "createdAt": "2024-05-22T15:04:00.439Z",
+    "updatedAt": "2024-05-22T15:04:09.313Z",
+    "name": "public-ev-battery-passport",
+    "displayName": "Public EV Battery Passport",
+    "description": "Electric Vehicle Battery Digital Product Passport - Battery Passport",
+    "version": "0.0.7",
+    "type": "DPP",
+    "namespace": "dpp",
+    "tags": [
+        "dpp",
+        "battery",
+        "public",
+        "model"
+    ],
+    "slug": "public-ev-battery-passport-0-0-7",
+    "url": "https://api-rcs.susi.spherity.dev/templates/v1/public-ev-battery-passport-0-0-7.jsonld",
+    "isPublished": true,
+    "jsonSchema": {
+        "type": "object",
+        "title": "Generated schema for Root",
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "required": [
+            "id",
+            "identifiers",
+            "attributes"
+        ],
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "attributes": {
+                "type": "object",
+                "required": [
+                    "batteryWeight",
+                    "ratedCapacity",
+                    "maximumVoltage",
+                    "minimumVoltage",
+                    "nominalVoltage",
+                    "batteryCategory",
+                    "batteryChemistry",
+                    "manufacturingDate",
+                    "extinguishingAgent",
+                    "manufacturingPlace",
+                    "criticalRawMaterials",
+                    "sustainabilityReport",
+                    "cadmiumAndLeadSymbols",
+                    "renewableContentShare",
+                    "batteryCarbonFootprint",
+                    "cyclelifeReferenceTest",
+                    "batteryUniqueIdentifier",
+                    "originalPowerCapability",
+                    "separateCollectionsymbol",
+                    "euDeclarationOfConformity",
+                    "meaningOfLabelsAndSymbols",
+                    "nameOfHazardousSubstances",
+                    "manufacturerIdentification",
+                    "soceThresholdForExhaustion",
+                    "warrantyPeriodOfTheBattery",
+                    "crateOfRelevantcyclelifeTest",
+                    "maximumPermittedBatteryPower",
+                    "preconsumerRecycledLeadShare",
+                    "euTaxonomyDisclosureStatement",
+                    "idOfEuDeclarationOfConformity",
+                    "locationOfHazardousSubstances",
+                    "postconsumerRecycledLeadShare",
+                    "capacityThresholdForExhaustion",
+                    "preconsumerRecycledCobaltShare",
+                    "preconsumerRecycledNickelShare",
+                    "carbonFootprintPerformanceclass",
+                    "postconsumerRecycledCobaltShare",
+                    "postconsumerRecycledNickelShare",
+                    "preconsumerRecycledLithiumShare",
+                    "thirdPartySupplyChainAssurances",
+                    "initialRoundTripEnergyEfficiency",
+                    "postconsumerRecycledLithiumShare",
+                    "informationOfTheDueDiligenceReport",
+                    "webLinkToPublicCarbonFootprintStudy",
+                    "roundTripEnergyEfficiencyAtOfCycleLife",
+                    "temperatureRangeIdleStateLowerBoundary",
+                    "temperatureRangeIdleStateUpperBoundary",
+                    "concentrationRangeOfHazardousSubstances",
+                    "relatedIdentifiersOfHazardousSubstances",
+                    "certifiedUsableBatteryEnergyUbecertified",
+                    "initialinternalResistanceOnBatteryCellLevel",
+                    "initialinternalResistanceOnBatteryPackLevel",
+                    "expectedLifetimeNumberOfChargedischargeCycles",
+                    "initialinternalResistanceOnBatteryModuleLevel",
+                    "roleOfEndusersInContributingToWastePrevention",
+                    "hazardClassesAndorCategoriesOfhazardousSubstances",
+                    "impactOfSubstancesOnTheEnvironmentHumanHealthSafety",
+                    "ratioBetweenNominalAllowedBatteryPowerWAndBatteryEnergyWh",
+                    "shareOfBatteryCarbonFootprintPerLifecyclestageDistribution",
+                    "roleOfEndUsersInContributingToTheSeparateCollectionOfWasteBatteries",
+                    "shareOfBatteryCarbonFootprintPerLifecyclestageEndOfLifeAndRecycling",
+                    "shareOfBatteryCarbonFootprintPerLifecyclestageMainProductProduction",
+                    "shareOfBatteryCarbonFootprintPerLifecyclestageRawMaterialAcquisitionAndPreprocessing",
+                    "informationOnSeparateCollectionTakeBackCollectionPointsAndPreparingForReusePreparingForRepurposingAndRecyclingOperations"
+                ],
+                "properties": {
+                    "batteryWeight": {
+                        "type": "string"
+                    },
+                    "ratedCapacity": {
+                        "type": "string"
+                    },
+                    "maximumVoltage": {
+                        "type": "string"
+                    },
+                    "minimumVoltage": {
+                        "type": "string"
+                    },
+                    "nominalVoltage": {
+                        "type": "string"
+                    },
+                    "batteryCategory": {
+                        "type": "string"
+                    },
+                    "batteryChemistry": {
+                        "type": "string"
+                    },
+                    "manufacturingDate": {
+                        "type": "string"
+                    },
+                    "extinguishingAgent": {
+                        "type": "string"
+                    },
+                    "manufacturingPlace": {
+                        "type": "string"
+                    },
+                    "criticalRawMaterials": {
+                        "type": "string"
+                    },
+                    "sustainabilityReport": {
+                        "type": "string"
+                    },
+                    "cadmiumAndLeadSymbols": {
+                        "type": "string"
+                    },
+                    "renewableContentShare": {
+                        "type": "string"
+                    },
+                    "batteryCarbonFootprint": {
+                        "type": "string"
+                    },
+                    "cyclelifeReferenceTest": {
+                        "type": "string"
+                    },
+                    "batteryUniqueIdentifier": {
+                        "type": "string"
+                    },
+                    "originalPowerCapability": {
+                        "type": "string"
+                    },
+                    "separateCollectionsymbol": {
+                        "type": "string"
+                    },
+                    "euDeclarationOfConformity": {
+                        "type": "string"
+                    },
+                    "meaningOfLabelsAndSymbols": {
+                        "type": "string"
+                    },
+                    "nameOfHazardousSubstances": {
+                        "type": "string"
+                    },
+                    "manufacturerIdentification": {
+                        "type": "string"
+                    },
+                    "soceThresholdForExhaustion": {
+                        "type": "string"
+                    },
+                    "warrantyPeriodOfTheBattery": {
+                        "type": "string"
+                    },
+                    "crateOfRelevantcyclelifeTest": {
+                        "type": "string"
+                    },
+                    "maximumPermittedBatteryPower": {
+                        "type": "string"
+                    },
+                    "preconsumerRecycledLeadShare": {
+                        "type": "string"
+                    },
+                    "euTaxonomyDisclosureStatement": {
+                        "type": "string"
+                    },
+                    "idOfEuDeclarationOfConformity": {
+                        "type": "string"
+                    },
+                    "locationOfHazardousSubstances": {
+                        "type": "string"
+                    },
+                    "postconsumerRecycledLeadShare": {
+                        "type": "string"
+                    },
+                    "capacityThresholdForExhaustion": {
+                        "type": "string"
+                    },
+                    "preconsumerRecycledCobaltShare": {
+                        "type": "string"
+                    },
+                    "preconsumerRecycledNickelShare": {
+                        "type": "string"
+                    },
+                    "carbonFootprintPerformanceclass": {
+                        "type": "string"
+                    },
+                    "postconsumerRecycledCobaltShare": {
+                        "type": "string"
+                    },
+                    "postconsumerRecycledNickelShare": {
+                        "type": "string"
+                    },
+                    "preconsumerRecycledLithiumShare": {
+                        "type": "string"
+                    },
+                    "thirdPartySupplyChainAssurances": {
+                        "type": "string"
+                    },
+                    "initialRoundTripEnergyEfficiency": {
+                        "type": "string"
+                    },
+                    "postconsumerRecycledLithiumShare": {
+                        "type": "string"
+                    },
+                    "informationOfTheDueDiligenceReport": {
+                        "type": "string"
+                    },
+                    "webLinkToPublicCarbonFootprintStudy": {
+                        "type": "string"
+                    },
+                    "roundTripEnergyEfficiencyAtOfCycleLife": {
+                        "type": "string"
+                    },
+                    "temperatureRangeIdleStateLowerBoundary": {
+                        "type": "string"
+                    },
+                    "temperatureRangeIdleStateUpperBoundary": {
+                        "type": "string"
+                    },
+                    "concentrationRangeOfHazardousSubstances": {
+                        "type": "string"
+                    },
+                    "relatedIdentifiersOfHazardousSubstances": {
+                        "type": "string"
+                    },
+                    "certifiedUsableBatteryEnergyUbecertified": {
+                        "type": "string"
+                    },
+                    "initialinternalResistanceOnBatteryCellLevel": {
+                        "type": "string"
+                    },
+                    "initialinternalResistanceOnBatteryPackLevel": {
+                        "type": "string"
+                    },
+                    "expectedLifetimeNumberOfChargedischargeCycles": {
+                        "type": "string"
+                    },
+                    "initialinternalResistanceOnBatteryModuleLevel": {
+                        "type": "string"
+                    },
+                    "roleOfEndusersInContributingToWastePrevention": {
+                        "type": "string"
+                    },
+                    "hazardClassesAndorCategoriesOfhazardousSubstances": {
+                        "type": "string"
+                    },
+                    "impactOfSubstancesOnTheEnvironmentHumanHealthSafety": {
+                        "type": "string"
+                    },
+                    "ratioBetweenNominalAllowedBatteryPowerWAndBatteryEnergyWh": {
+                        "type": "string"
+                    },
+                    "shareOfBatteryCarbonFootprintPerLifecyclestageDistribution": {
+                        "type": "string"
+                    },
+                    "roleOfEndUsersInContributingToTheSeparateCollectionOfWasteBatteries": {
+                        "type": "string"
+                    },
+                    "shareOfBatteryCarbonFootprintPerLifecyclestageEndOfLifeAndRecycling": {
+                        "type": "string"
+                    },
+                    "shareOfBatteryCarbonFootprintPerLifecyclestageMainProductProduction": {
+                        "type": "string"
+                    },
+                    "shareOfBatteryCarbonFootprintPerLifecyclestageRawMaterialAcquisitionAndPreprocessing": {
+                        "type": "string"
+                    },
+                    "informationOnSeparateCollectionTakeBackCollectionPointsAndPreparingForReusePreparingForRepurposingAndRecyclingOperations": {
+                        "type": "string"
+                    }
+                }
+            },
+            "identifiers": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": [
+                        "type",
+                        "value"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
